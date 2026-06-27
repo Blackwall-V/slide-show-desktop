@@ -1,0 +1,12 @@
+[Unit]
+Description=Desktop Slideshow Daemon
+After=graphical-session.target
+
+[Service]
+Type=simple
+Environment=DISPLAY=:0
+Environment=XDG_CURRENT_DESKTOP=Hyprland
+ExecStart=/usr/bin/python3 %h/.config/desktop-slideshow/app.py
+
+[Install]
+WantedBy=default.target
