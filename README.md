@@ -91,17 +91,3 @@ Click and drag the window around. It's frameless so there's no title bar to grab
 | `app.py` | The Python glue that holds this disaster together |
 | `index.html` | The CSS/JS slideshow engine. Fades images. Doesn't judge them. |
 | `slideshow.service` | systemd unit so you never have to lift a finger again |
-
-## FAQ
-
-**Q: The window is black.**  
-A: Put images in the folder. For real.
-
-**Q: The images look stretched.**  
-A: Cry about it. (`object-fit: cover` is already there, maybe your images are weird aspect ratios.)
-
-**Q: Can I change the interval?**  
-A: Yes. Open `index.html`. Find `5000`. Change it to whatever in milliseconds. Congratulations, you're a developer now.
-
-**Q: Does this work on macOS/Windows?**  
-A: pywebview does. The window will open but it'll look slightly less cool. Also you're using macOS or Windows, so you have bigger problems.
